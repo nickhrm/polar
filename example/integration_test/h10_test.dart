@@ -7,6 +7,7 @@ import '../../test/tests.dart';
 
 const identifier = '1C709B20';
 
+//test
 void main() async {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
 
@@ -30,11 +31,7 @@ void main() async {
   testHrService(identifier);
   testStreaming(
     identifier,
-    features: {
-      PolarDataType.hr,
-      PolarDataType.acc,
-      PolarDataType.ecg,
-    },
+    features: {PolarDataType.hr, PolarDataType.acc, PolarDataType.ecg},
   );
   testRecording(identifier);
   testMisc(identifier, supportsLedConfig: false);
